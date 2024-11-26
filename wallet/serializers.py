@@ -6,7 +6,7 @@ from .models import UserProfile, Wallet , Transaction
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'username',]  # Adjust as needed
+        fields = ['id', 'username',]  
 
 class UserProfileSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
