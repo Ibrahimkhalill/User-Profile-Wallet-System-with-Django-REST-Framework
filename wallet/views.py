@@ -114,4 +114,4 @@ def wallet_view(request):
         Transaction.objects.create(wallet=wallet, amount=amount, transaction_type=Transaction.WITHDRAWAL)
 
         wallet_serializer = WalletSerializer(wallet)
-        return Response({'message': 'Funds deducted successfully', 'balance': wallet_serializer.data})
+        return Response({'message': 'Funds substruct successfully', 'balance': wallet_serializer.data})
