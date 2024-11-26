@@ -5,3 +5,4 @@ from .models import UserProfile, Wallet
 
 admin.site.register(UserProfile)
 admin.site.register(Wallet)
+admin.site.register(Wallet)
