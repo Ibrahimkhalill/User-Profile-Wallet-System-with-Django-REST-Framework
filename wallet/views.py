@@ -98,7 +98,7 @@ def wallet_view(request):
         return Response({'message': 'Funds added successfully', 'balance': wallet_serializer.data})
 
     elif request.method == 'PATCH':
-        # Deduct funds from the wallet
+        # substruct funds from the wallet
         amount = Decimal(request.data.get('amount', 0))
 
         if amount <= 0:
